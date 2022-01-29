@@ -94,8 +94,8 @@ html {
 
 body {
   font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
-  color: #453E4F;
+  font-family: 'Roboto', sans-serif;
+  color: #095256;
   background-color: white;
   /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
 }
@@ -108,21 +108,21 @@ ol {
 }
 
 a {
-  color: #453E4F;
+  color: #095256;
   text-decoration: none;
 }
 
 h1 {
-  color: #453E4F;
-  font-family: 'Alike', serif;
+  color: #bdbf09;
+  font-family: 'Roboto', serif;
   font-size: 1.75rem;
   line-height: 1.5;
   width: 100%
 }
 
 h2 {
-  color: #453E4F;
-  font-family: 'Alike', serif;
+  color: #095256;
+  font-family: 'Roboto', serif;
   font-size: 1.25rem;
   line-height: 1.5;
   width: 100%;
@@ -141,12 +141,13 @@ h5 {
   font-size: 1.5rem;
 }
 
+
 .project-link,
 .language-wrapper p,
 .tool-wrapper p {
   text-transform: uppercase;
   font-size: 1.125rem;
-  color: #453E4F;
+  color: #095256;
 }
 
 
@@ -160,7 +161,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Alike', serif;
+  font-family: 'Roboto', serif;
   line-height: 1.5;
   width: 100%
 }
@@ -189,6 +190,8 @@ address {
 
 /* Structural Styles */
 header,
+h1,
+h2,
 #work,
 #skills,
 #about,
@@ -200,7 +203,7 @@ footer {
 }
 
 .content-wrapper {
-  width: 85%;
+  width: 90%;
 }
 
 #work p,
@@ -226,12 +229,11 @@ p {
 
 /* then can set the margin & paddings for any element */
 header {
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding: 15px 0;
 }
 
 nav {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 #work {
@@ -306,36 +308,85 @@ figure {
 /* -------------------- Base Header Styles -------------------- */
 
 header {
-  background-color: #ffe8d6;
+  background-color: #96b4af;
+  align-items: center;
+}
+
+header nav {
+  width: 100%;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 header nav ul li {
-  font-size: .75rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: .75em;
 }
 
+
 nav #contact-link {
-  background-color: #F19494;
+  background-color: #bdbf09;
   padding: 10px 10px;
   border-radius: 30px;
 }
 
-nav ul {
+
+header .content-wrapper {
+  margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-header h1 {
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.header-divider {
+  background: #bdbf09;
+  height: 1px;
   width: 100%;
+  margin: 10px 0 20px 0;
 }
 
-header h2 {
-  width: 100%
-}
+
+
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area */
+
+.hero-area {
+background-image: url('../img/hero-image.png');
+background-size: cover;
+background-position: top;
+min-height: 500px;
+display: flex;
+justify-content: center;
+flex-flow: row wrap;
+margin: 0px;
+padding: 0px;
+}
+
+
+.hero-area h1, h2 {
+  width: 100%;
+}
 
 /* Portfolio */
 #work,
@@ -372,7 +423,7 @@ header h2 {
 }
 
 .project-link {
-  background-color: #453E4F;
+  background-color: #095256;
   padding: .75rem 3.75rem;
   border-radius: 30px;
   color: #FFFFFF;
@@ -380,11 +431,11 @@ header h2 {
 
 .project-link:hover {
   background-color: #CAC4D1;
-  color: #453E4F;
+  color: #095256;
 }
 
 #skills {
-  background-color: #FFE8D6;
+  background-color: #96b4af;
 }
 
 #skills h4 {
@@ -394,7 +445,7 @@ header h2 {
 
 .language-wrapper p,
 .tool-wrapper p {
-  background-color: #F19494;
+  background-color: #f8f980;
   padding: 15px 0;
   margin: 20px 0;
 }
@@ -409,18 +460,18 @@ header h2 {
 }
 
 #profile-image {
-  width: 90%;
+  width: 100%;
 }
 
 #about h3,
 #about h4,
 #about p {
-  color: #4a4f3e;
+  color: #095256;
 }
 
-/* -------------------- Base Header Styles -------------------- */
+/* -------------------- Base Footer Styles -------------------- */
 footer {
-  background-color: #FFE8D6;
+  background-color: #f8f980;
 }
 
 footer .contact-wrapper {
@@ -463,7 +514,7 @@ footer .social-icons li {
 
 footer .social-icons li i {
   font-size: 1.875rem;
-  color: #453e4f;
+  color: #095256;
 }
 
 
@@ -561,7 +612,7 @@ footer .social-icons li i {
 
   /* General styles */
   .content-wrapper {
-    max-width: 640px;
+    max-width: 90%;  
   }
 
   /* font styles */
@@ -592,13 +643,40 @@ footer .social-icons li i {
   /* element margins */
   /* the list element have 20px of bottom margin already */
   header {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    justify-content: space-around;
+    padding: 33px 0;
   }
 
-  nav {
-    margin: 0 0 80px 0;
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
   }
+
+  /*nav {
+    margin: 0 0 80px 0;
+  }*/
+
+  header figure {
+    width: 30%;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Hero Area */
+
+.hero-area {
+  min-height: 600px;
+}
+  
+  
+.hero-area h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+}
+
 
   /*#work */
   #work {
@@ -676,8 +754,8 @@ footer .social-icons li i {
     flex-flow: row wrap;
   }
 
-  header nav {
-    /* keep if using hamburger menu */
+ /* header nav {
+  
     display: flex;
     justify-content: center;
     width: 100%;
@@ -685,12 +763,12 @@ footer .social-icons li i {
   }
 
   header nav ul {
-    /* keep if using hamburger menu */
+    
     display: flex;
     justify-content: space-between;
     width: 80%;
   }
-
+*/
   .home-title {
     display: flex;
     flex-flow: row wrap;
@@ -786,7 +864,7 @@ footer .social-icons li i {
 
   /* added for landscape tablets and iPad Pro */
   .content-wrapper {
-    max-width: 900px;
+    max-width: 90%;  
   }
 
   .about-info h3 {
@@ -798,7 +876,7 @@ footer .social-icons li i {
 
   /*Desktop styles here*/
   .content-wrapper {
-    max-width: 1450px;
+    max-width: 90%;  
   }
 
   /* font styles */
@@ -843,14 +921,7 @@ footer .social-icons li i {
 
   /* element margins */
   /* the list element have 20px of bottom margin already */
-  header {
-    padding-top: 80px;
-    padding-bottom: 140px;
-  }
 
-  nav {
-    margin-bottom: 80px;
-  }
 
   #work {
     padding-top: 80px;
@@ -919,12 +990,12 @@ footer .social-icons li i {
 
   /* header */
   header .content-wrapper {
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   header nav {
     justify-content: flex-end;
-    width: 45%;
+    width: 65%;
   }
 
   nav ul li a {
@@ -933,8 +1004,8 @@ footer .social-icons li i {
 
   nav ul li a:hover,
   nav #contact-link:hover {
-    background-color: #F8C6C6;
-    color: #453E4F;
+    background-color: #bdbf09;
+    color: #095256;
     padding: 10px 10px;
     border-radius: 30px;
   }
